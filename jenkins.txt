@@ -1,0 +1,23 @@
+pipeline{
+agent any
+stages 
+{
+stage("build and test"){
+steps{
+echo "build and test successful}}
+stage("release")
+{
+steps{
+echo("release successful")
+}}
+stage("monitor")
+{
+steps
+{
+echo("monitor successfull")
+}}}
+post{
+success{
+echo ("pipeline completed succesfully")
+}
+}
