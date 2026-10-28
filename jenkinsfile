@@ -1,0 +1,30 @@
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Source code checkout configured through GitHub'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo 'Build stage is running'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Test stage is running'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deployment stage is running'
+            }
+        }
+    }
+}
